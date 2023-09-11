@@ -1,0 +1,16 @@
+function findDistinctSum(set1, set2):
+    distinctArray = []
+    sum = 0
+    
+    for element in set1:
+        if element not in distinctArray:
+            distinctArray.append(element)
+    
+    for element in set2:
+        if element not in distinctArray:
+            distinctArray.append(element)
+    
+    for element in distinctArray:
+        sum = sum + element
+    
+    return sum
